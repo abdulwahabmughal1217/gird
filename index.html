@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS GIRD</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .main-box {
+        padding: 1rem;
+        margin: auto;
+        width: 75%;
+        height: 150vh;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 0.5fr);
+        gap: 1rem;
+      }
+      .box {
+        background-color: red;
+        border-radius: 16px;
+      }
+      .box2 {
+        grid-column: 2/4;
+        grid-row: 1/3;
+      }
+      .box4 {
+        grid-column: 1/2;
+        grid-row: 2/4;
+      }
+      .box8{
+        grid-column: 4/5;
+        grid-row: 3/5;
+      }
+      .box9 {
+        grid-column: 2/4;
+        grid-row: 4/5;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 16px;
+        object-fit: cover;
+        object-position: center;
+      }
+      .box9 img{
+        object-position: right;
+      }
+      .box10 img{
+        object-position: bottom right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-box">
+      <div class="box box1">
+        <img src="./image-1.webp" alt="" />
+      </div>
+      <div class="box box2">
+        <img src="./image-2.webp" alt="" />
+      </div>
+      <div class="box box3">
+        <img src="./image-3.webp" alt="" />
+      </div>
+      <div class="box box4">
+        <img src="./image-4.webp" alt="" />
+      </div>
+      <div class="box box5">
+        <img src="./image-7.webp" alt="">
+      </div>
+      <div class="box box6">
+        <img src="./image-5.webp" alt="" />
+      </div>
+      <div class="box box7">
+        <img src="./image=-6.webp" alt="" />
+      </div>
+      <div class="box box8">
+        <img src="./image_8.webp" alt="">
+      </div>
+      <div class="box box9">
+        <img src="./image-10.webp" alt="">
+      </div>
+      <div class="box box10">
+        <img src="./image-9.webp" alt="">
+      </div>
+    </div>
+  </body>
+</html>
